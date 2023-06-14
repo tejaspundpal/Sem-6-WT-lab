@@ -1,0 +1,75 @@
+.border {
+  border: 1px solid black;
+}
+
+
+.container {
+  background-image: url('https://kineticsoftware.com/wp-content/uploads/2019/08/support-copy.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.registration-form {
+  width: 25%;
+  padding: 10px;
+  background-color:#dceffe;
+  border-radius: 10px;
+}
+
+input {
+  width: 90%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+form{
+  margin: 10%;
+}
+
+html,body{
+  margin: 0;
+  height: 100%;
+}
+
+.btn{
+  margin-top: 3%;
+  padding: 2%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary{
+
+  border-color: rgb(23, 183, 23);
+  background-color: rgb(23, 183, 23);
+  color: white;
+}
+
+.btn-danger{
+  border-color: rgb(252, 0, 0);
+  background-color: rgb(252, 0, 0);
+  color: white;
+}
+
+.btn-primary:hover{
+  border-color: rgb(18, 142, 18);
+  background-color: rgb(18, 142, 18);
+  color: white;
+}
+
+.btn-danger:hover{
+  border-color: rgb(195, 17, 17);
+  background-color: rgb(195, 17, 17);
+  color: white;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+}

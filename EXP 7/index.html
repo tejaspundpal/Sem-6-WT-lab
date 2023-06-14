@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling with jQuery</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Click event handler
+			$("#myElement").click(function() {
+				$(this).text("Click event occurred");
+			});
+
+			// Double click event handler
+			$("#myElement").dblclick(function() {
+				$(this).text("Double click event occurred");
+			});
+
+			// Mouse enter event handler
+			$("#myElement").mouseenter(function() {
+				$(this).text("Mouse enter event occurred");
+			});
+
+			// Mouse leave event handler
+			$("#myElement").mouseleave(function() {
+				$(this).text("Mouse leave event occurred");
+			});
+
+            // Double click event handler
+			$("#myElement1").dblclick(function() {
+				$(this).text("Double click event occurred").hide();
+			});
+
+			// Mouse enter event handler
+			$("#myElement1").mouseleave(function() {
+				$(this).text("Mouse leave event occurred").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h2>Event Handling with jQuery</h2>
+	<p id="myElement">Hover over and click me!</p>
+  <p id="myElement1">This is a paragraph</p>
+</body>
+</html>

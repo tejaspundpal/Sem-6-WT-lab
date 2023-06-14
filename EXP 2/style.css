@@ -1,0 +1,45 @@
+.container{
+    border: solid black 1px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.intro{
+    border: solid black 1px;
+    display: flex;
+    /* background-color: rgb(236, 226, 213); */
+}
+.introLeft{
+    margin-left: 10px;
+    width: 72%;
+    display: inline-block;
+}
+.introRight{
+    width: 28%;
+    display: inline-block;
+    /* background-color: burlywood; */
+}
+.introLeft h2{
+    color: rgb(28, 28, 172);
+}
+.introLeft h3{
+    color: rgb(18, 18, 167);
+}
+.introLeft p a{
+    color: black;
+    text-decoration: none;
+}
+#student{
+    margin-top: -15px;
+}
+#img{
+    height: 94%;
+    width: 80%;
+    margin: 5px 4px 1px 23px;
+}
+.objective{
+    border: solid black 1px;
+}
+.objective h2,.objective p{
+    margin-left: 10px;
+}
+

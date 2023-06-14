@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Form</title>
+        <!-- <meta http-equiv="refresh" content="10"> -->
+             <style>
+            form {
+                border: 3px solid black;
+                margin: 150px;
+                padding: 80px;
+                height:500px;
+                width: 20%;
+                background-color: aqua;
+            }
+            body {
+                background-color: antiquewhite;
+            }
+            #submit {
+            background-color: chocolate;
+            border: 1px solid greenyellow;
+            color: white;
+            padding: 12px 12px;         
+            font-size: 14px;
+             }
+
+             #reset {
+            background-color: chocolate;
+            border: 1px solid greenyellow;
+            color: white;
+            padding: 12px 12px;         
+            font-size: 14px;
+             }
+
+            .first {
+                background-color: aquamarine;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <center>
+        <form>
+            <label for="firtsname"><b>FirstName: </b></label><br>
+            <input type="text" class="first" placeholder="FirstName" required><br>
+
+            <label for="firtsname"><b>Lastname: </b></label><br>
+            <input type="text" class="first" placeholder="LastName" required><br>
+
+            <label for="username"><b>Username: </b></label><br>
+            <input type="text" class="first" placeholder="UserName" required><br>
+
+            <label for="username"><b>Password: </b></label><br>
+            <input type="password" class="first" placeholder="Password" required><br>
+
+            <label for="email"><b>Emailid: </b></label><br>
+            <input type="email" class="first" placeholder="Email" required><br><BR>
+
+            <label for="birthday"><b>Birthday: </b></label>
+            <input type="date" class="first" name="birthday"><br><br>
+
+            <label for="subject"><b>Select favourite language: </b></label><br>
+            <input type="radio" id="html" name="fav_lang" value="HTML">
+            <label for="subject">HTML </label><br> 
+
+            <input type="radio" id="css" name="fav_lang" value="CSS">
+            <label for="subject">CSS </label><br>
+
+            <input type="radio" id="js" name="fav_lang" value="JAVASCRIPT">
+            <label for="subject">JAVASCRIPT </label><br><br>
+
+            <label for="myfile"><b>Attach Result: </b></label><br>
+            <input type="file" id="myfile" name="myfile"><br><br>
+
+           
+            <input type="checkbox" id="bike" name="bike" >
+            <label for="vehicle"><b>Accept terms and conditions.</b> </label><br><br>
+
+                    
+
+            <input type="submit" value="SUBMIT" id="submit">
+            <input type="reset" value="RESET" id="reset">
+         
+        </form>
+        </center>
+    </body>
+</html>

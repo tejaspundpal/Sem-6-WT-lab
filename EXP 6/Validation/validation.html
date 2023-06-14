@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voter ID registration</title>
+    <link rel="stylesheet" href="./style.css"></link>
+    <script>
+        function validate(){
+            const date = new Date();
+            let name = document.forms["myform"]["fname"].value;
+            let an = document.forms["myform"]["an"].value;
+            let mn = document.forms["myform"]["mn"].value;
+            let dob = document.forms["myform"]["dob"].value;
+
+            // Sample data
+            var d1 = new Date(dob);
+            var d2 = new Date();
+            var diff = d2.getTime() - d1.getTime();
+            var daydiff = (diff / 31536000000).toFixed(0);
+
+            if(!(isNaN(name))){ 
+                alert("Name must be correct.");
+                return false;
+            }
+            if(mn.toString().length != 10){
+                alert("mobile Number is not valid.");
+                return false;
+            }
+            if(an == ""){
+                alert("Address should be valid.");
+                return false;
+            }
+            if(daydiff < 18){
+                alert("Age is not valid.");
+                return false;
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container border">
+        <div class="registration-form border">
+            <form action="" name = "myform">
+                <center><h1>Voter Id Registration</h1></center>
+                <label for="">Name</label><br>
+                <input type="text" name="fname" id="fname"required><br>
+                <label for="">Email</label><br>
+                <input type="email" name="mail" id="mail"required><br>
+                <label for="">Date of Birth</label><br>
+                <input type="date" name="dob" id="dob" required><br>
+                <label for="">Address</label><br>
+                <input type="text" name="an" id="an" required><br>
+                <label for="">ID Proof</label><br>
+                <input type="file" name="file" id="file" required><br>
+                <label for="">Mobile Number</label><br>
+                <input type="number" name="mn" id="mn" required><br>
+
+                <div class = "btn-container">
+                    <button type="submit" class="btn btn-primary" onclick="return validate()">Submit</button>
+                    <button type="reset" class = "btn btn-danger">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>

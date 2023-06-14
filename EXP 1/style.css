@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* border-style: solid; */
+    margin-right: 675px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Icons{
+    display: inline;
+    justify-content: center;
+}
+#govLogo{
+    height: 100px;
+    width: 1000px;
+}
+#adharLogo{
+    height: 80px;
+    width: 160px;
+    margin-left: 41px;
+}
+#photo{
+    height: 285px;
+    width: 223px;
+    margin-left: 91px;
+    margin-top: 31px;
+}
+.content{
+    display: flex
+}
+.data{
+    padding-top: 99px;
+    padding-left: 10px;
+}
+.data div{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 14px 18px
+}
+#qr{
+    height: 200px;
+    width:200px;
+    margin-left: 329px;
+    margin-top: 77px;
+}
+.adharno{
+    font-weight: bold;
+    font-size:70px
+}
+.setAdharno{
+    margin-left: 165px;
+    margin-top: 26px;
+    margin-bottom: 10px
+}
+.adharno span{
+    padding: 18px;
+    margin-left: 66px;
+}
+#footer{
+    height: 113px;
+    width: 100%;
+}
